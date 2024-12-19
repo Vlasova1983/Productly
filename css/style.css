@@ -1,0 +1,123 @@
+@import url('./reset.css');
+@import url('./normolize.css');
+@import url('./var.css');
+
+body{
+    color: var(--main-text-color);
+    max-width: 1110px;
+    margin: 0 auto;
+    font-family: "Poppins", serif;
+}
+/* ----------Header------------*/
+header{   
+    margin: 30px 0
+}
+
+.wrap_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.wrap_header>a{
+    font-family: "Poppins", serif;
+    color: var(--color-hover-btn);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-size: 44px; 
+    color:var(--main-text-color);
+}
+.wrap_menu{
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+nav>ul{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: var(--inline-text-color); 
+    font-size: 14px;
+    font-weight: 500;    
+}
+nav>ul>li>a:hover,nav>ul>li>a:focus{
+    color:var(--color-hover-btn);
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap:20px 
+}
+.btn_inline, .btn{
+    padding:8px 15px;
+    border: 1px solid var(--color-inline-btn);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:500;
+}
+.btn{
+    background-color:var(--color-btn);
+    border: 1px solid var(--color-btn); 
+    color:var(--colot-text-btn);   
+}
+.btn:focus,.btn:hover{
+    opacity: 0.8;    
+    cursor:pointer;
+}
+.btn_inline:focus,.btn_inline:hover{    
+    border: 1px solid var(--color-hover-btn);    
+    cursor:pointer;
+}
+.wrap_button{
+    display: flex;
+    gap: 30px; 
+    margin-top: 45px;
+}
+
+/* --------------Main----------*/
+/* section hero */
+.hero{
+    margin-bottom: 110px; 
+}
+.conteiner_hero{
+    display: flex;
+    justify-content: space-between; 
+}
+.title_hero{
+    font-size: 44px;
+    font-weight: bold; 
+}
+.content_hero{
+    color: var(--inline-text-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn_hero{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color: var(--color-btn);
+    font-size: 16px;
+    font-weight:bolder; 
+    text-decoration:underline; 
+}
+.btn_hero:hover{
+    opacity: 0.8; 
+    cursor: pointer;   
+}
+
+/* ---------------Footer ----------*/
+
+footer{
+    padding:102px 0 83px 0
+}
